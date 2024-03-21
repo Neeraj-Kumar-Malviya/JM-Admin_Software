@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Salary Management</title>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+
+    <link
+      rel="stylesheet"
+      href="
+https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+  </head>
+
+  <style>
+    .bttn {
+      position: sticky;
+      bottom: 0;
+    }
+  </style>
+
+  <body>
+    <div file-include-html="assets/includes/header.html"></div>
+
+    <div class="wrapper d-flex align-items-stretch">
+      <div file-include-html="assets/includes/sidebar.html"></div>
+
+      <!-- Page Content  -->
+      <div id="content" class="p-4 p-md-4">
+        <div class="row">
+          <div class="col-md-6">
+            <h2 class="mb-4 pageTitle">Employee Salary</h2>
+          </div>
+        </div>
+        <!---row -->
+
+        <div class="row">
+          <div class="col-md-12">
+            <form>
+              <div class="form-group row py-2">
+                <label
+                  for="inputPassword"
+                  class="col-sm-2 col-form-label text-danger"
+                  >Vendor Name*</label
+                >
+                <div class="col-sm-2">
+                  <div class="form-group">
+                    <select class="form-select" id="exampleFormControlSelect2">
+                      <option>Select a vendor</option>
+                      <option>Hyginetech India Pvt Ltd</option>
+                      <option>Adani Electricity</option>
+                      <option>TATA Power</option>
+                      <option>Adani Electricity</option>
+                    </select>
+                  </div>
+                </div>
+                <label
+                  for="inputPassword"
+                  class="col-sm-2 col-form-label text-danger"
+                  >Source of Supply*</label
+                >
+                <div class="col-sm-2">
+                  <div class="form-group">
+                    <select class="form-select" id="exampleFormControlSelect2">
+                      <option>[GJ]-Gujrat</option>
+                      <option>[MH]- Maharastra</option>
+                      <option></option>
+                      <option></option>
+                      <option></option>
+                    </select>
+                  </div>
+                </div>
+
+                <label
+                  for="inputPassword"
+                  class="col-sm-2 col-form-label text-danger"
+                  >Destination of Supply*</label
+                >
+                <div class="col-sm-2">
+                  <div class="form-group">
+                    <select class="form-select" id="exampleFormControlSelect2">
+                      <option>[MH]- Maharastra</option>
+                      <option>[GJ]-Gujrat</option>
+                      <option></option>
+                      <option></option>
+                      <option></option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+
+              <div class="form-group row py-2">
+                <label for="inputPassword" class="col-sm-2 col-form-label"
+                  >Emp Code</label
+                >
+                <div class="col-sm-2">
+                  <div class="form-group">
+                    <input type="text" class="form-control" placeholder="" />
+                  </div>
+                </div>
+                <label
+                  for="inputPassword"
+                  class="col-sm-2 col-form-label text-danger"
+                  >Employee Name</label
+                >
+                <div class="col-sm-2">
+                  <div class="form-group">
+                    <input type="text" class="form-control" placeholder="" />
+                  </div>
+                </div>
+
+                <label for="Gender" class="col-sm-2 col-form-label"
+                  >Gender</label
+                >
+                <div class="col-sm-2">
+                  <select class="form-select" id="Gender">
+                    <option>Select</option>
+                    <option>Male</option>
+                    <option>Female</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="form-group row py-2">
+                <label for="inputPassword" class="col-sm-2 col-form-label"
+                  >Date of Birth</label
+                >
+                <div class="col-sm-2">
+                  <div class="form-group">
+                    <input type="date" class="form-control" placeholder="" />
+                  </div>
+                </div>
+
+                <label for="Age" class="col-sm-2 col-form-label">Age</label>
+                <div class="col-sm-2">
+                  <div class="form-group">
+                    <input type="text" class="form-control" placeholder="" />
+                  </div>
+                </div>
+                <label for="date" class="col-sm-2 col-form-label"
+                  >Date of Joining JMF Group</label
+                >
+                <div class="col-sm-2">
+                  <div class="form-group">
+                    <input type="date" class="form-control" placeholder="" />
+                  </div>
+                </div>
+              </div>
+
+              <div class="form-group row py-2">
+                <label for="date" class="col-sm-2 col-form-label"
+                  >Total Year of Service</label
+                >
+                <div class="col-sm-2">
+                  <input type="text" class="form-control" placeholder="" />
+                </div>
+                <label for="text" class="col-sm-2 col-form-label"
+                  >Category</label
+                >
+                <div class="col-sm-2">
+                  <div class="form-group">
+                    <input type="text" class="form-control" placeholder="" />
+                  </div>
+                </div>
+                <label for="text" class="col-sm-2 col-form-label text-danger"
+                  >Designation</label
+                >
+                <div class="col-sm-2">
+                  <div class="form-group">
+                    <select class="form-select" id="Gender">
+                      <option>Select</option>
+                      <option>Office boy</option>
+                      <option>Pantry Steward</option>
+                      <option>Housekeeping</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+
+              <div class="form-group row py-2">
+                <label
+                  for="inputPassword"
+                  class="col-sm-2 col-form-label text-danger"
+                  >Department</label
+                >
+                <div class="col-sm-2">
+                  <div class="form-group">
+                    <select class="form-select" id="Gender">
+                      <option>Select</option>
+                      <option>Controllers</option>
+                      <option>Administration</option>
+                      <option>EWMG</option>
+                      <option>DBG</option>
+                    </select>
+                  </div>
+                </div>
+
+                <label for="Age" class="col-sm-2 col-form-label"
+                  >Employee Location</label
+                >
+                <div class="col-sm-2">
+                  <div class="form-group">
+                    <input type="text" class="form-control" placeholder="" />
+                  </div>
+                </div>
+                <label for="date" class="col-sm-2 col-form-label"
+                  >Employee Sub-Location</label
+                >
+                <div class="col-sm-2">
+                  <div class="form-group">
+                    <input type="text" class="form-control" placeholder="" />
+                  </div>
+                </div>
+              </div>
+
+              <div class="form-group row py-2">
+                <label for="inputPassword" class="col-sm-2 col-form-label"
+                  >Employee State</label
+                >
+                <div class="col-sm-2">
+                  <div class="form-group">
+                    <input type="text" class="form-control" placeholder="" />
+                  </div>
+                </div>
+
+                <label for="Age" class="col-sm-2 col-form-label text-danger"
+                  >Billed to JM Entity</label
+                >
+                <div class="col-sm-2">
+                  <div class="form-group">
+                    <input type="text" class="form-control" placeholder="" />
+                  </div>
+                </div>
+                <label for="date" class="col-sm-2 col-form-label text-danger"
+                  >Salary</label
+                >
+                <div class="col-sm-2">
+                  <div class="form-group">
+                    <input type="text" class="form-control" placeholder="" />
+                  </div>
+                </div>
+              </div>
+              <div class="form-group row py-2">
+                <label for="inputPassword" class="col-sm-2 col-form-label"
+                  >Remarks</label
+                >
+                <div class="col-sm-2">
+                  <div class="form-group">
+                    <input type="text" class="form-control" placeholder="" />
+                  </div>
+                </div>
+
+                <!-- <label for="Age" class="col-sm-2 col-form-label text-danger">Billed to JM Entity</label> -->
+                <div class="col-sm-2">
+                  <!-- <div class="form-group">
+                    <input type="text" class="form-control" placeholder="">
+                  </div> -->
+                </div>
+                <!-- <label for="date" class="col-sm-2 col-form-label">Salary</label> -->
+                <div class="col-sm-2">
+                  <!-- <div class="form-group">
+                    <input type="text" class="form-control" placeholder="">
+                  </div> -->
+                </div>
+              </div>
+            </form>
+
+            <!-- <div class="form-group row pt-3">
+            <label for="date" class="col-form-label">Item Rates Are</label>
+            <div class="">
+              <div class="form-group">
+                <select class="form-control" id="exampleFormControlSelect2">
+                  <option>Tax Exclusive</option>
+                  <option></option>
+                  <option></option>
+                  <option></option>
+                  <option></option>
+                </select>
+              </div>
+            </div>
+            &nbsp;&nbsp;&nbsp;
+            <label for="text" class=" col-form-label">Discount Type</label>
+            <div class="form-group">
+              <select class="form-control" id="exampleFormControlSelect2">
+                <option>At transaction less then</option>
+                <option></option>
+                <option></option>
+                <option></option>
+                <option></option>
+              </select>
+            </div>
+
+          </div> -->
+
+            <!--  -->
+            <div class="col-md-12 pt-3">
+              <!-- <div class="table-responsive" > -->
+              <!-- <div class="table-responsive">
+                <table class="table table-bordered">
+                  <thead style="white-space: pre">
+                    <tr>
+                      <th scope="col">S.N</th>
+                      <th scope="col">Emp Code</th>
+                      <th scope="col">Employee Name</th>
+                      <th scope="col">Employee Location</th>
+                      <th scope="col">Category</th>
+                      <th scope="col">Designation</th>
+                      <th scope="col">Department</th>
+                      <th scope="col">Sub-Department</th>
+                      <th scope="col">Salary</th>
+                      <th scope="col">Action</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>1</td>
+                      <td scope="row ">
+                        <input
+                          type="text"
+                          class="border-0 text-dark"
+                          placeholder="Emp Code"
+                        />
+                      </td>
+                      <td>
+                        <input
+                          type="text"
+                          class="border-0 text-dark"
+                          placeholder="Emp Name"
+                        />
+                      </td>
+                      <td>
+                        <select class="border-0 text-dark">
+                          <option>Select Location</option>
+                          <option>Mumbai</option>
+                          <option>Bhopal</option>
+                          <option>Hydrabad</option>
+                          <option>Delhi</option>
+                        </select>
+                      </td>
+                      <td>
+                        <select class="border-0 text-dark">
+                          <option>Select</option>
+                          <option>A</option>
+                          <option>B</option>
+                          <option>c</option>
+                          <option>D</option>
+                        </select>
+                      </td>
+                      <td>
+                        <select class="border-0 text-dark">
+                          <option>Select</option>
+                          <option>Pantry Steward</option>
+                          <option>Housekeeping</option>
+                          <option>Office boy</option>
+                        </select>
+                      </td>
+                      <td>
+                        <input
+                          type="text"
+                          class="border-0 text-dark"
+                          placeholder="Enter Department"
+                        />
+                      </td>
+                      <td>
+                        <input
+                          type="text"
+                          class="border-0 text-dark"
+                          placeholder="Enter Sub-Department"
+                        />
+                      </td>
+  
+                      
+                      <td class="font-weight-bold"><input
+                        type="text"
+                        class="border-0 text-dark"
+                        placeholder="Enter Emp Salary"
+                      /></td>
+                      
+                      <td class="d-flex">
+                        <i class="bi bi-plus text-primary"></i> &nbsp;
+                        <i class="bi bi-copy text-primary"></i> &nbsp;
+                        <i class="bi bi-x text-danger"></i>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div> -->
+            </div>
+          </div>
+
+          <!-- <div class=" w-100 m-0 my-2 mx-3">
+            <button type="button" class="btn btn-primary"><i class="fa fa-plus"></i> &nbsp;&nbsp;Add Another
+              Line</button>
+          </div> -->
+
+          <div class="row w-100 mx-1">
+            <div class="col-md-6 mt-4">
+              <!-- <div class="form-group w-100">
+                <label for="exampleFormControlTextarea1">Customer Notes</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+              </div> -->
+            </div>
+
+            <div class="col-md-6">
+              <div class="row">
+                <!-- <div class="col-md-4">
+                  <p>Sub Total</p>
+                  <p>Total Quantity :5</p>
+
+                </div>
+
+                <div class="col-md-8 ">
+                  <p class="text-muted float-right">1000.00</p>
+
+                </div> -->
+              </div>
+
+              <!-- <div class="row">
+                <div class="col-md-4">
+                  <p>Discount</p>
+                  <p class="text-info">apply after tax</p>
+
+                </div>
+
+                <div class="col-md-4">
+                  <div class="input-group">
+                    <input type="text" class="form-control"
+                      aria-label="Dollar amount (with dot and two decimal places)">
+                    <div class="input-group-append">
+                      <span class="input-group-text" style="background-color: #7269FF; color: white;">$</span>
+                      <span class="input-group-text" style="background-color: #7269FF; color: white;"><i
+                          class="fa fa-angle-down" aria-hidden="true"></i>
+                      </span>
+                    </div>
+                  </div>
+
+                </div>
+
+                <div class="col-md-4 ">
+                  <p class="text-muted float-right">-100.00</p>
+
+                </div>
+
+
+              </div> -->
+
+              <!-- <div class="row">
+                <div class="col-md-4">
+                  <p>Discount Account*</p>
+  
+                </div>
+  
+                <div class="col-md-4 ">
+                  <select class="p-1 rounded  border-secondary text-secondary">
+                    <option class="">purchase discount...</option>
+                    <option >etc..</option>
+  
+                  </select>
+                  <small class="mt-2">You can create a new account with type as Expense or other Expense</small>
+  
+                </div>
+  
+                <div class="col-md-4 ">
+                  
+                </div>
+  
+                
+              </div> -->
+
+              <!-- <div class="row mt-4">
+                <div class="col-md-6 font-weight-bold">
+                  <p>IGST [18%]</p>
+                </div>
+                <div class="col-md-6 ">
+                  <p class="float-right">180.00</p>
+                </div>
+              </div> -->
+
+              <!-- <div class="row my-2">
+                <div class="col-md-4">
+                  <p>Adjustment</p>
+
+                </div>
+
+                <div class="col-md-6 ">
+                  <span class="d-flex align-items-center mr-1">
+                    <input class="form-control " type="text" placeholder="">
+                    <i class="fa fa-question-circle ml-2" aria-hidden="true"></i>
+
+                  </span>
+
+
+                </div>
+
+                <div class="col-md-2 ">
+                  <p class="float-right">0</p>
+
+                </div>
+
+
+              </div> -->
+
+              <!-- <div class="row my-2">
+                <div class="col-md-6">
+                  <p class="font-weight-bold">Total ($)</p>
+                </div>
+                <div class="col-md-6">
+                  <p class="font-weight-bold float-right">1080.00</p>
+                </div>
+              </div> -->
+            </div>
+          </div>
+
+          <!-- <div class="row w-100 mx-1">
+            <div class="col-md-6">
+              
+            </div>
+            <div class="col-md-6">
+
+              <div class="form-group">
+
+                <input type="file" class="form-control-file" id="exampleFormControlFile1">
+                <small>you can upload maximum of 10 files, each 5mb</small>
+              </div>
+            </div>
+          </div> -->
+        </div>
+
+        <div class="float-right bttn">
+          <button type="button" class="btn btn-primary">Save</button>
+          <!-- <button type="button" class="btn btn-primary">Save as Open</button> -->
+          <button type="button" class="btn btn-primary">Cancel</button>
+        </div>
+      </div>
+      <!--  page main content div -->
+    </div>
+    <!----? -->
+
+    <script src="assets/js/apexcharts/apexcharts.min.js"></script>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/popper.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="assets/js/include.js"></script>
+    <script src="assets/js/custom.js"></script>
+    <script src="assets/js/progressBar.js"></script>
+
+    <!--  -->
+  </body>
+</html>
